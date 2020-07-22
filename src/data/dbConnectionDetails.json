@@ -1,0 +1,53 @@
+[
+    {
+      "name": "Hive RDS",
+      "database": [
+        {
+          "name": "portalpipelinetestdb",
+          "tables": [
+            {
+              "name": "portalpipelinetestdb_payments",
+              "columns": ["id", "BANKACCOUNT", "PROCESSINGDATE","PROCESSINGTIME"]
+            },
+            {
+              "name": "portalpipelinetestdb_user_payments",
+              "columns": ["id", "PROCESSINGDATE", "DEBETCREDIT"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Hive Test RDS ",
+      "database": [
+        {
+          "name": "sap_ecc",
+          "tables": [
+            { "name": "SAP_ECC_ANLP", "columns": ["OAR_ID", "MANDT", "BUKRS","PSTBEG"] },
+            {
+              "name": "SAP_ECC_ANLZ",
+              "columns": ["OAR_ID", "GJAHR", "SAFAG", "ZUCOD","PSTBEG"]
+            },
+            { "name": "SAP_ECC_ANLC", "columns": ["OAR_ID", "MANDT", "ANUPD"] }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "ADLS RDS",
+      "database": [
+        {
+          "name": "sap_ecc",
+          "tables": [
+            { "name": "SAP_ECC_ANLP", "columns": ["OAR_ID", "MANDT", "BUKRS","PSTBEG"] },
+            {
+              "name": "SAP_ECC_ANLZ",
+              "columns": ["OAR_ID", "GJAHR", "SAFAG", "ZUCOD","PSTBEG"]
+            },
+            { "name": "SAP_ECC_ANLC", "columns": ["OAR_ID", "MANDT", "ANUPD"] }
+          ]
+        }
+      ]
+    }
+  ]
+  

@@ -1,0 +1,34 @@
+[
+    {
+        "id": "p1001",
+        "Application Name": "Read Data Store",
+        "Rule Name" : "Automated BCDB profiling",
+        "Rule Description": "Profile incoming BCDB data for nulls, missing values & duplicate keys",
+        "Rule Owner": "dgp@xyz.com",
+        "Profile Group": "Table Level Profile",
+        "Connection": "Hive RDS",
+        "Database": "Hive RDS DB",
+        "Table": "Customer",
+        "Columns": ["name","id"],
+        "Target DQI": "90",
+        "Threshold": "60",
+        "Frequency": "3 PM, Retry every 1 hour for 4 hours",
+        "Alert": "Service Now"
+    },
+    {
+        "id": "p1002",
+        "Application Name": "Profile Data Store",
+        "Rule Name" : "BCDB profiling for nulls",
+        "Rule Description": "Profile incoming BCDB data for nulls",
+        "Rule Owner": "rf@xyz.com",
+        "Profile Group": "Database Level Profile",
+        "Connection": "ADLS RDS",
+        "Database": "ADLS RDS DB",
+        "Table": "MarketEntity",
+        "Columns": ["name","id"],
+        "Target DQI": "80",
+        "Threshold": "70",
+        "Frequency": "5 PM, Retry every 2 hour for 4 hours",
+        "Alert": "Email"
+    }
+]
